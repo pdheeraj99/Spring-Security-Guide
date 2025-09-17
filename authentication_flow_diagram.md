@@ -22,8 +22,8 @@ sequenceDiagram
     actor Client
 
     %% Define styles for classes and interfaces
-    classDef interface fill:#E8F3FD,stroke:#3471A5,stroke-width:2px
-    classDef class fill:#FFF2CC,stroke:#D6B656,stroke-width:2px
+    classDef interface fill:#E8F3FD,stroke:#3471A5,stroke-width:2px;
+    classDef class fill:#FFF2CC,stroke:#D6B656,stroke-width:2px;
 
     %% Participant Definitions
     participant FCP as FilterChainProxy
@@ -39,8 +39,8 @@ sequenceDiagram
     participant SCR as "<<interface>> <br> SecurityContextRepository"
 
     %% Apply styles
-    class AEP,AM,UDS,PE,SH,SCR interface
-    class FCP,ETF,UAPF,DAO,SCH class
+    class AEP,AM,UDS,PE,SH,SCR interface;
+    class FCP,ETF,UAPF,DAO,SCH class;
 
     %% --- Flow 1: Unauthenticated Request & Redirect ---
 
