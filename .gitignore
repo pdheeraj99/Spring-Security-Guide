@@ -1,0 +1,18 @@
+# Build artifacts
+target/
+
+# Log files
+*.log
+mvnw
+mvnw.cmd
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Misc
+.DS_Store

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Security Story</title>
+</head>
+<body>
+    <h1>Welcome to the Public Home Page!</h1>
+    <p>Everyone can see this page. 🌍</p>
+    <p>Click here to go to the secured page (you will be asked to log in): <a th:href="@{/welcome}">Go to Welcome Page</a></p>
+</body>
+</html>
