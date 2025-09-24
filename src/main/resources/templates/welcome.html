@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+</head>
+<body>
+    <h1>Welcome to the Secured Page! 🛡️</h1>
+
+    <p>If you can see this, you have successfully logged in.</p>
+
+    <!-- Display username -->
+    <p>Hello, <span sec:authentication="name">User</span>!</p>
+
+    <!-- Display authorities/roles -->
+    <p>Your roles: <span sec:authentication="principal.authorities">Roles</span></p>
+
+    <p>Ready to go?
+        <form th:action="@{/logout}" method="post" style="display:inline;">
+            <button type="submit">Logout</button>
+        </form>
+    </p>
+</body>
+</html>
